@@ -2,8 +2,8 @@
 title: "volcano-georef"
 output:
   rmarkdown::html_vignette:
-    fig_width: 7
-    fig_height: 7
+    fig_width: 6
+    fig_height: 6
 vignette: >
   %\VignetteIndexEntry{volcano-georef}
   %\VignetteEngine{knitr::rmarkdown}
@@ -96,7 +96,7 @@ Let's go for better resolution.
 
 ```{r}
 grd <- gdalio_get_default_grid()
-grd$dimension <- grd$dimension * 10 ## 1m
+grd$dimension <- grd$dimension * 8 ## 1.25m
 gdalio_set_default_grid(grd)
 print(grd$dimension)
 plot(gdalio_terra(elev$source, resample = "cubic"))
