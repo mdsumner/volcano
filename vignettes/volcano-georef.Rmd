@@ -88,7 +88,7 @@ src <- gdalio_sources() |> dplyr::distinct()
 gdalio_set_default_grid(volc)
 
 elev <- dplyr::filter(src, name == "aws-elevation-tiles-prod")
-plot(gdalio_terra(elev$source, resample = "cubic"))
+image(gdalio_terra(elev$source, resample = "cubic"))
 ```
 
 
@@ -99,7 +99,7 @@ grd <- gdalio_get_default_grid()
 grd$dimension <- grd$dimension * 8 ## 1.25m
 gdalio_set_default_grid(grd)
 print(grd$dimension)
-plot(gdalio_terra(elev$source, resample = "cubic"))
+image(gdalio_terra(elev$source, resample = "cubic"))
 ```
 
 ```{r esri}
