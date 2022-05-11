@@ -8,6 +8,14 @@
 \description{
 Provides georeferencing of the 'volcano' data set, in New Zealand Map Grid coordinates.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/mdsumner/volcano}
+  \item Report bugs at \url{https://github.com/mdsumner/volcano/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Michael D. Sumner \email{mdsumner@gmail.com}
 
