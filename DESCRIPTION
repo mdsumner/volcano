@@ -1,22 +1,23 @@
 Package: volcano
 Title: Georeference for Volcano
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: c(person("Michael D.","Sumner", role = c("aut", "cre"), email = "mdsumner@gmail.com"))
 Description: Provides georeferencing of the 'volcano' data set, in New Zealand Map Grid coordinates. 
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
 Suggests: 
     dplyr,
-    gdalio,
+    whatarelief,
     knitr,
     rmarkdown,
-    terra
+    terra,
+    ximage
 VignetteBuilder: knitr
 Depends: 
     R (>= 2.10)
 LazyData: true
-Remotes: hypertidy/gdalio
+Remotes: hypertidy/whatarelief, hypertidy/ximage
 URL: https://github.com/mdsumner/volcano
 BugReports: https://github.com/mdsumner/volcano/issues
+RoxygenNote: 7.2.3

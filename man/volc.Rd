@@ -3,10 +3,15 @@
 \docType{data}
 \name{volc}
 \alias{volc}
+\alias{volc_extent}
+\alias{volc_proj}
 \title{The georeferenced volcano data.}
 \description{
-In \code{\link[=image]{image()}} xyz list format.
+In \code{\link[=image]{image()}} xyz list format \link{volc}, the four digit extent (xmin, xmax, ymin, ymax) \link{volc_extent} and
+the projection string \link{volc_proj}
 }
 \examples{
 image(volc, asp = 1)
+print(volc_extent)
+print(volc_proj)
 }
